@@ -1,5 +1,7 @@
 package test.jgpark.first.Head01.example;
 
+import java.util.Arrays;
+
 public class LoopExample {
     public static void main(String[] args) {
 
@@ -8,6 +10,7 @@ public class LoopExample {
         Exam3();
         Exam4();
         Exam5();
+        Exam6();
     }
 
     private static void Exam1()
@@ -128,5 +131,10 @@ public class LoopExample {
 
         copy1[0] = 100;
         System.out.println(original[0]); // 1 (영향 없음)
+    }
+
+    private static void Exam6()
+    {
+        
     }
 }
