@@ -7,6 +7,7 @@ public class LoopExample {
         Exam2();
         Exam3();
         Exam4();
+        Exam5();
     }
 
     private static void Exam1()
@@ -109,5 +110,23 @@ public class LoopExample {
 
             System.out.println();
         }
+    }
+
+    private static void Exam5()
+    {
+        int[] original = {1, 2, 3};
+        int[] copy = original;
+        copy[0] = 100;
+        System.out.println(original[0]); // 100
+
+        original[0] = 1;
+
+        int[] copy1 = new int[original.length];
+        for (int i = 0; i < original.length; i++) {
+            copy1[i] = original[i];
+        }
+
+        copy1[0] = 100;
+        System.out.println(original[0]); // 1 (영향 없음)
     }
 }
