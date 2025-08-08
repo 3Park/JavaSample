@@ -2,6 +2,13 @@ package test.jgpark.first.Head01.example;
 
 public class LoopExample {
     public static void main(String[] args) {
+
+        Exam1();
+        Exam2();
+    }
+
+    private static void Exam1()
+    {
         for (int i = 0; i <= 10; i++) {
             System.out.println("i = " + i);
         }
@@ -38,8 +45,6 @@ public class LoopExample {
             if (i == 4) break;
             System.out.println(i);
         }
-
-        Exam2();
     }
 
     private static void Exam2()
@@ -71,6 +76,19 @@ public class LoopExample {
         while (count < 3) {
             System.out.println("count = " + count);
             count++;
+        }
+    }
+
+    private static void Exam3()
+    {
+        int[] nums = {10, 20, 30,40,50,60,70,80,90,100};
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println("nums[" + i + "] = " + nums[i]);
+        }
+
+        String[] animals = {"Cat", "Dog", "Bird","Cat", "Dog", "Bird","Cat", "Dog", "Bird","Cat", "Dog", "Bird"};
+        for (String animal : animals) {
+            System.out.println(animal);
         }
     }
 }
