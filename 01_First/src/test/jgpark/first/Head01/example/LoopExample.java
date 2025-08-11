@@ -1,15 +1,16 @@
 package test.jgpark.first.Head01.example;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class LoopExample {
     public static void main(String[] args) {
 
-        Exam1();
-        Exam2();
-        Exam3();
-        Exam4();
-        Exam5();
+//        Exam1();
+//        Exam2();
+//        Exam3();
+//        Exam4();
+//        Exam5();
         Exam6();
     }
 
@@ -135,6 +136,12 @@ public class LoopExample {
 
     private static void Exam6()
     {
-        
+        int[] aa = {10,20,30,40,50};
+        // 배열 요소 출력
+
+//        for(int i = 0; i < aa.length(); i++)
+//        {
+//            System.out.println("인덱스 " + i + ": " + aa[i]);
+//        }
     }
 }
