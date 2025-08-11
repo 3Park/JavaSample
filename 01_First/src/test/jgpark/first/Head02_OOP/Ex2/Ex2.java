@@ -26,5 +26,10 @@ public class Ex2 {
         for (Product p : order3.getProducts()) {
             System.out.println("- " + p.getName() + " ($" + p.getPrice() + ")");
         }
+
+        double originalPrice = 100.0;
+        double finalPrice = Utils.applyDiscount(originalPrice);
+        System.out.println("할인 적용된 가격: " + finalPrice);
+
     }
 }
