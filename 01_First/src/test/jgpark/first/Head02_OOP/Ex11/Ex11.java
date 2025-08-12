@@ -6,8 +6,16 @@ public class Ex11
         Payment p = new Payment();
         User u = new User("1234");
 
-        p.refund(u,200);
-        p.pay(u,100);
-        p.refund(u,200);
+        try
+        {
+            u.deposit(100);
+            p.pay(u,100);
+            p.refund(u,100);
+        }
+        catch (Exception e)
+        {
+            System.out.printf("오류 : %s\n", e.getMessage());
+        }
+
     }
 }
