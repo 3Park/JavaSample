@@ -10,8 +10,18 @@ public class ex9 {
             return a - b;
         };
 
+        Calc c2= (a,b) -> {
+            return a * b;
+        };
+
+        Calc c3 = (int a, int b) -> {
+            return a / b;
+        };
+
         System.out.println(c.operate(3,5));
         System.out.println(c1.operate(3,5));
+        System.out.println(c2.operate(3,5));
+        System.out.println(c3.operate(3,5));
     }
 }
 
