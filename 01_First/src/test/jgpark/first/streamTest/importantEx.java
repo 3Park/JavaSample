@@ -13,7 +13,7 @@ public class importantEx {
         System.out.println(bb);
 
 
-        //unique string
+        //unique string set은 중복 비허용 리스트
         List<String> str = Arrays.asList("Apple","Apple","Banana","Banana","Cherry");
         Set<String> set = str.stream().collect(Collectors.toSet());
         System.out.println(set);
